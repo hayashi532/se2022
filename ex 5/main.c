@@ -1,12 +1,16 @@
 #include <stdio.h>
+#include <string.h>
 
-int main(void){
-#include <stdio.h>
-  int i,j,k;
+int main(void)
+{
+	size_t len;
+	char hello[] = "Hello";
 
-  i = 1;
-  j = 2;
-  k = i + j;
+	len = strlen("abc");	
+	printf("abc:%d \n", len);
 
-  printf("i=%d j=%d k=%d\n",i,j,k);
-return 0;}
+	len = strlen(hello);
+	printf("Hello:%d \n", len);
+
+	return 0;
+}
